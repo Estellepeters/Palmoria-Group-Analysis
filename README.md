@@ -1,6 +1,6 @@
 # Palmoria-Group-Analysis
 Palmoria Group, a manufacturing company in Nigeria, is under public scrutiny for gender inequality across its three operational regions. Following negative media coverage, the company seeks to address issues such as gender pay gaps and workforce imbalance.
-# Case Study 3: Palmora Group HR Analysis
+# Case Study 1: Palmora Group HR Analysis
 # 1. Project Overview
 The Palmoria Group, a manufacturing company based in Nigeria, is embroiled in issues
 bordering on gender inequality in its 3 regions. Unfortunately, the media recently

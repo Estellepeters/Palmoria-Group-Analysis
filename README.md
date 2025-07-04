@@ -31,3 +31,75 @@ to these employees
 You will need to take those employees out
 ● Lastly, some departments are indicated as “NULL”. These departments would also
 need to be taken out.
+# Pointers from Mr Gamma
+# Question 1. What is the gender distribution in the organization? Distil to regions and departments.
+## Gender Distribution in Palmoria Group
+### Tool Used: Excel Pivot Table
+### Approach used:
+- Cleaned the dataset to remove rows with no salary or department (as instructed).
+- Assigned "Not Disclosed" to blank gender entries.
+- Created a Pivot Table with:
+  - Rows: Gender
+  - Columns: Region, Department
+  - Values: Count of Employee ID
+### Insight:
+- Male employees outnumber females in all regions and most departments.
+- Some departments have zero female representation.
+
+# Question 2: Show insights on ratings based on gender
+## Performance Ratings by Gender
+### Tool Used: Power BI
+### Approach used:
+- Transformed rating categories (Very Poor, Poor, Average, Good, Very Good) into values.
+- Built a stacked bar chart showing gender on the x-axis and ratings on the y-axis.
+### Insight:
+- Male employees received more high ratings, though they are the majority.
+- A balanced look at ratings distribution can guide future HR assessments.
+
+# Question 3. Analyse the company’s salary structure. Identify if there is a gender pay gap. If there is, identify the department and regions that should be the focus of management
+### Tool Used: Excel & SQL
+### SQL Query Summary:
+```sql
+SELECT gender, department, region, AVG(salary) AS avg_salary
+FROM palmoria_employees
+GROUP BY gender, department, region;
+```
+### Insight:
+- There is a noticeable pay gap in Engineering and Finance departments.
+- Northern region has wider disparities in certain roles.
+
+# Question 4. A recent regulation was adopted which requires manufacturing companies to pay
+employees a minimum of $90,000
+● Does Palmoria meet this requirement?
+● Show the pay distribution of employees grouped by a band of $10,000. For example:
+● How many employees fall into a band of $10,000 – $20,000, $20,000 – $30,000,
+etc.?
+● Also visualize this by regions
+### Tool Used: Excel Pivot & Power BI
+### Approach used:
+- Created salary bands (e.g., $10k-$20k, $20k-$30k, ...)
+- Filtered employees earning below $90k
+- Counted employees in each band by region
+### Insight:
+- 17% of employees earn below $90,000
+- The South-East has the highest number of underpaid employees
+
+# Question 5: Mr Gamma thought to himself that since you were already working on the employee
+data, you could help out with allocating the annual bonus pay to employees based on the
+performance rating. He handed you another data set that contains rules for making bonus
+payments and asked you to:
+● Calculate the amount to be paid as a bonus to individual employees
+● Calculate the total amount to be paid to individual employees (salary inclusive of
+bonus)
+● Total amount to be paid out per region and company-wide
+
+### Tool Used: SQL + Excel
+### What Was Done:
+- Merged employee dataset with bonus rules (based on performance level)
+- Calculated bonus = bonus % × salary
+- Computed total payout = salary + bonus
+### Insight:
+- Average bonus per employee is $5,200
+- The Engineering department received the highest cumulative bonus
+---
+

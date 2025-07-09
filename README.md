@@ -103,3 +103,21 @@ bonus)
 - The Engineering department received the highest cumulative bonus
 ---
 
+## Power BI Report
+
+This `.pbix` file contains the full Palmoria HR Analysis dashboard, including:
+
+- Gender Distribution by Region and Department
+- Salary Structure and Pay Gap Analysis
+- Performance Ratings vs Bonus Allocation
+- Salary Band Compliance Visualization
+
+### 🖼Dashboard Preview
+![Dashboard](Palmoria_PowerBI_Insights.png)
+
+###  Files Included:
+- Palmoria_HR_Analysis_Report.pbix – Main Power BI report
+- Palmoria Group emp-data.csv – Source employee dataset
+- Bonus Rules.xlsx – Performance bonus mapping
+
+

@@ -112,8 +112,8 @@ This `.pbix` file contains the full Palmoria HR Analysis dashboard, including:
 - Performance Ratings vs Bonus Allocation
 - Salary Band Compliance Visualization
 
-### 🖼Dashboard Preview
-![Dashboard](Palmoria_PowerBI_Insights.png)
+### Dashboard Preview
+!https://github.com/Estellepeters/Palmoria-Group-Analysis/blob/main/Dashboard%201.png
 
 ###  Files Included:
 - Palmoria_HR_Analysis_Report.pbix – Main Power BI report
